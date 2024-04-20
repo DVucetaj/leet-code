@@ -1,5 +1,14 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        """
+        Determines if the input string contains valid parentheses.
+
+        Args:
+            s (str): The input string containing only parentheses ('()', '{}', '[]').
+
+        Returns:
+            bool: True if the parentheses are valid, False otherwise.
+        """
         stack = []
         mapping = {')': '(', '}': '{', ']': '['}
         
